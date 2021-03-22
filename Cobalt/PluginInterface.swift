@@ -82,7 +82,7 @@ private func ObjectShow(plugin: CMIOHardwarePlugInRef?, objectID: CMIOObjectID) 
 }
 
 private func ObjectHasProperty(plugin: CMIOHardwarePlugInRef?, objectID: CMIOObjectID, address: UnsafePointer<CMIOObjectPropertyAddress>?) -> DarwinBoolean {
-    log(address?.pointee.mSelector)
+    log(address?.pointee.mSelector as Any)
     guard let address = address?.pointee else {
         log("Address is nil")
         return false
@@ -95,7 +95,7 @@ private func ObjectHasProperty(plugin: CMIOHardwarePlugInRef?, objectID: CMIOObj
 }
 
 private func ObjectIsPropertySettable(plugin: CMIOHardwarePlugInRef?, objectID: CMIOObjectID, address: UnsafePointer<CMIOObjectPropertyAddress>?, isSettable: UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus {
-    log(address?.pointee.mSelector)
+    log(address?.pointee.mSelector as Any)
     guard let address = address?.pointee else {
         log("Address is nil")
         return OSStatus(kCMIOHardwareBadObjectError)
@@ -110,7 +110,7 @@ private func ObjectIsPropertySettable(plugin: CMIOHardwarePlugInRef?, objectID: 
 }
 
 private func ObjectGetPropertyDataSize(plugin: CMIOHardwarePlugInRef?, objectID: CMIOObjectID, address: UnsafePointer<CMIOObjectPropertyAddress>?, qualifiedDataSize: UInt32, qualifiedData: UnsafeRawPointer?, dataSize: UnsafeMutablePointer<UInt32>?) -> OSStatus {
-    log(address?.pointee.mSelector)
+    log(address?.pointee.mSelector as Any)
     guard let address = address?.pointee else {
         log("Address is nil")
         return OSStatus(kCMIOHardwareBadObjectError)
@@ -124,7 +124,7 @@ private func ObjectGetPropertyDataSize(plugin: CMIOHardwarePlugInRef?, objectID:
 }
 
 private func ObjectGetPropertyData(plugin: CMIOHardwarePlugInRef?, objectID: CMIOObjectID, address: UnsafePointer<CMIOObjectPropertyAddress>?, qualifiedDataSize: UInt32, qualifiedData: UnsafeRawPointer?, dataSize: UInt32, dataUsed: UnsafeMutablePointer<UInt32>?, data: UnsafeMutableRawPointer?) -> OSStatus {
-    log(address?.pointee.mSelector)
+    log(address?.pointee.mSelector as Any)
     guard let address = address?.pointee else {
         log("Address is nil")
         return OSStatus(kCMIOHardwareBadObjectError)

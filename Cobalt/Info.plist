@@ -18,8 +18,6 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2020 Bezaleel Ashefor. All rights reserved.</string>
 	<key>CFPlugInFactories</key>
 	<dict>
 		<key>1B67AF75-E18D-4EB5-87CC-0AF982ABDD5A</key>
@@ -30,5 +28,7 @@
 		<key>30010C1C-93BF-11D8-8B5B-000A95AF9C6A</key>
 		<string>1B67AF75-E18D-4EB5-87CC-0AF982ABDD5A</string>
 	</dict>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2020 Bezaleel Ashefor. All rights reserved.</string>
 </dict>
 </plist>
